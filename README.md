@@ -66,7 +66,17 @@ We kunnen Python libraries importeren met het commando import.
 
 # Workshop 1 een ledje laten branden
 
+Benodigd:
+
+* Wit ledje
+* Rood draadje
+* Zwart draadje
+* Weerstandje met kleuren bruin zwart bruin goud
+* Breadbordje met gaatjes
+* Wemos bordje
+
 1. zorg dat de kabeljes aangesloten is volgens het onderstaande voorbeeld
+![voorbeeld workshop1](images/workshop1.png)
 
 2. Type vervolgens na >>> de volgende regel in:
 
@@ -80,8 +90,9 @@ We kunnen Python libraries importeren met het commando import.
   > Nu zeggen we tegen het bordje dat hij er stroom op het pinnetje moet gaan zetten.
 
   led.off()
-  > Nu Zeggen we tegen het bordje dat hij de stroom er vanaf moet gaan halen.
+  > Nu zeggen we tegen het bordje dat hij de stroom er vanaf moet gaan halen.
 
+Zojuist hebben wij het eerste programma geschreven voor het bordje in Python. Niet zo moeilijk toch ;)
 
 
 # Workshop 2 een zwaailichtje maken
