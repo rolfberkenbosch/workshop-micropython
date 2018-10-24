@@ -95,7 +95,8 @@ Benodigd:
   ```
   > Nu zeggen we tegen het bordje dat hij er stroom op het pinnetje moet gaan zetten.
 
-  ```led.off()
+  ```
+  led.off()
   ```
   > Nu zeggen we tegen het bordje dat hij de stroom er vanaf moet gaan halen.
 
