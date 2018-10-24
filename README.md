@@ -159,7 +159,8 @@ while True:
   sensor2.off()
   rood1.on()
   rood2.on()
-
+  sleep(1)
+  
   # Check of een auto staat op sensor1
   sensor1.on()
   if lichtsterkte.read() < 400:
