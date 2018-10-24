@@ -139,3 +139,50 @@ while True:
     led.off()
 ```
 # Workshop 4 een stoplichtje maken
+```
+from machine import Pin
+from machine import ADC
+from time import sleep
+
+lichtsterkte = ADC(0)
+sensor1 = Pin(16, Pin.OUT)
+sensor2 = Pin(14, Pin.OUT)
+rood1 = Pin(15, Pin.OUT)
+oranje1 = Pin(13, Pin.OUT)
+groen1 = Pin(12, Pin.OUT)
+rood2 = Pin(0, Pin.OUT)
+oranje2 = Pin(4, Pin.OUT)
+groen2 = Pin(5, Pin.OUT)
+
+while True:
+  sensor1.off()
+  sensor2.off()
+  rood1.on()
+  rood2.on()
+
+  # Check of een auto staat op sensor1
+  sensor1.on()
+  if lichtsterkte.read() < 400:
+    rood1.off()
+    groen1.on()
+    sleep(5)
+    groen1.off()
+    oranje1.on()
+    sleep(1)
+    oranje1.off()
+    rood1.on()
+  sensor1.off()
+
+  # Check of een auto staat op sensor2
+  sensor2.on()
+  if lichtsterkte.read() < 400:
+    rood2.off()
+    groen2.on()
+    sleep(5)
+    groen2.off()
+    oranje2.on()
+    sleep(1)
+    oranje2.off()
+    rood2.on()
+  sensor2.off()
+```
