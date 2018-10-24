@@ -160,10 +160,10 @@ while True:
   rood1.on()
   rood2.on()
   sleep(1)
-  
+
   # Check of een auto staat op sensor1
   sensor1.on()
-  if lichtsterkte.read() < 400:
+  if lichtsterkte.read() < 300:
     rood1.off()
     groen1.on()
     sleep(5)
@@ -176,7 +176,7 @@ while True:
 
   # Check of een auto staat op sensor2
   sensor2.on()
-  if lichtsterkte.read() < 400:
+  if lichtsterkte.read() < 300:
     rood2.off()
     groen2.on()
     sleep(5)
