@@ -80,16 +80,20 @@ Benodigd:
 
 2. Type vervolgens na >>> de volgende regel in:
 
-  from machine import Pin
+  ```from machine import Pin
+  ```
   > Hiermee zorgen we dat de Pin module geladen wordt waardoor wij de pin kunnen aansturen van het bordje
 
-  led = Pin(5, Pin.OUT)
+  ```led = Pin(5, Pin.OUT)
+  ```
   > Hiermee definieren wij **led** welke is aangesloten is op pin nummer 14, en dat het bordje stroom op het pinnetje moet gaan zetten.
 
-  led.on()
+  ```led.on()
+  ```
   > Nu zeggen we tegen het bordje dat hij er stroom op het pinnetje moet gaan zetten.
 
-  led.off()
+  ```led.off()
+  ```
   > Nu zeggen we tegen het bordje dat hij de stroom er vanaf moet gaan halen.
 
 Zojuist hebben wij het eerste programma geschreven voor het bordje in Python. Niet zo moeilijk toch ;)
@@ -97,15 +101,18 @@ Zojuist hebben wij het eerste programma geschreven voor het bordje in Python. Ni
 
 # Workshop 2 een zwaailichtje maken
 
-from machine import Pin
+```from machine import Pin
 from time import sleep
+```
 
 > Hiermee zorgen we dat de Pin module geladen wordt waardoor wij de pin kunnen aansturen van het bordje
 
+```
 led1 = Pin(4, Pin.OUT)
 led2 = Pin(5, Pin.OUT)
+```
 > Hiermee definieren wij **led** welke is aangesloten is op pin nummer 14, en dat het bordje stroom op het pinnetje moet gaan zetten.
-
+```
 while True:
   led1.on()
   led2.off()
@@ -113,17 +120,16 @@ while True:
   led1.off()
   led2.on()
   sleep(0.5)
-
-
+```
 > Je ziet hierboven een aantal spaties voor led en sleep. Bij het intypen van code zet micropython automatisch de spaties ervoor. Na de laatste regels moet je een paar keer op enter drukken zodat python weet dat je uit de while lus wilt gaan.
 
 # Workshop 3 knopje met ledje
-led = Pin(5, Pin.OUT)
+```led = Pin(5, Pin.OUT)
 button = Pin(4, Pin.IN, Pin.PULL_UP)
 while True:
   if button.value():
     led.on()
   else:
     led.off()
-
+```
 # Workshop 4 een stoplichtje maken
