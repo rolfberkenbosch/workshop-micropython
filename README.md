@@ -29,6 +29,27 @@ Voordat we aan de slag kunnen gaan met MicroPython moeten we eerst zorgen dat we
 
 ## Windows gebruikers
 
+1. driver [downloaden](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) voor Windows OS
+2. driver installeren, open de zip file, je ziet dan onderstaande map:
+![uitgepakte driver bestand screenshot](images/screen1.png)
+3. Kopieeer vervolgens de map ergens op je hardeschijf
+3. Start vervolgens de exe, zie onderstaande afbeelding voor het bestandsnaam:
+![uitgepakte driver bestand screenshot](images/screen2.png)
+4. Klik vervolgens op **"Volgende"**
+![uitgepakte driver bestand screenshot](images/screen3.png)
+5. Vervolgens verschijnt het onderstaande screenshot:
+![uitgepakte driver bestand screenshot](images/screen4.png)
+6. Reboot het systeem, en sluit daarna het bordje aan met de usb kabel.
+7. Start vervolgens **Apparaatbeheer**. Klap vervolgens de com poorten uit om uit te zoeken op welke com poort het bordje is aangelosten. In dit geval com9.
+![uitgepakte driver bestand screenshot](images/screen5.png)
+8. [Downloaden](https://the.earth.li/~sgtatham/putty/latest/w32/putty.exe) vervolgens putty, hiermee kunnen we een verbinding opzetten naar het bordje.
+9. Start vervolgens putty en stel de onderstaande waardes in, zet bij compoort het jusit poortnummer in.
+![uitgepakte driver bestand screenshot](images/screen6.png)
+10. Klik vervolgens op openen, je ziet vervolgens een zwart scherm. Als je een paar keer op enter drukt zie je vervolgens ```>>>``` je hebt nu verbinding met het bordje.
+
+> **Note:** Het kan zijn dat er een beveiligingswaarschuwing komt, de driver installatie moet u toestaan.
+
+
 ## Webrpl
 
 Het is ook mogelijk om zonder driver het bordje te benaderen. Dit kan middels webrpl. Hiervoor moeten onderstaande stappen worden ondernomen.
