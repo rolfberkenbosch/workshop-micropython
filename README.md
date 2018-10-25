@@ -71,7 +71,7 @@ Benodigd:
 * Wit ledje
 * Rood draadje
 * Zwart draadje
-* Weerstandje met kleuren bruin zwart bruin goud
+* Weerstandje met kleuren bruin zwart bruin goud (100Ohm)
 * Breadbordje met gaatjes
 * Wemos bordje
 
@@ -88,7 +88,7 @@ Benodigd:
   ```
   led = Pin(5, Pin.OUT)
   ```
-  > Hiermee definieren wij **led** welke is aangesloten is op pin nummer 14, en dat het bordje stroom op het pinnetje moet gaan zetten.
+  > Hiermee definieren wij **led** welke is aangesloten is op pin nummer 5, en dat het bordje stroom op het pinnetje moet gaan zetten.
 
   ```
   led.on()
@@ -105,18 +105,33 @@ Zojuist hebben wij het eerste programma geschreven voor het bordje in Python. Ni
 
 # Workshop 2 een zwaailichtje maken
 
+Benodigd:
+
+* 2x blauwe ledje
+* Rood draadje
+* Zwart draadje
+* Geel draadje
+* 2x Weerstandje met kleuren bruin zwart bruin goud (100Ohm)
+* Breadbordje met gaatjes
+* Wemos bordje
+
+1. zorg dat de kabeljes aangesloten is volgens het onderstaande voorbeeld
+![voorbeeld workshop1](images/workshop3.png)
+
+2. Type vervolgens na >>> de volgende regel in:
+
 ```
 from machine import Pin
 from time import sleep
 ```
 
-> Hiermee zorgen we dat de Pin module geladen wordt waardoor wij de pin kunnen aansturen van het bordje
+> Hiermee zorgen we dat de Pin module geladen wordt waardoor wij de pin kunnen aansturen van het bordje. Daarnaast laden wij de module sleep in zodat we het programma even kunnen laten pauzeren.
 
 ```
 led1 = Pin(4, Pin.OUT)
 led2 = Pin(5, Pin.OUT)
 ```
-> Hiermee definieren wij **led** welke is aangesloten is op pin nummer 14, en dat het bordje stroom op het pinnetje moet gaan zetten.
+> Hiermee definieren wij **led** welke is aangesloten is op pin nummer 4,5 en dat het bordje stroom op het pinnetjes moet gaan zetten.
 ```
 while True:
   led1.on()
@@ -126,18 +141,47 @@ while True:
   led2.on()
   sleep(0.5)
 ```
-> Je ziet hierboven een aantal spaties voor led en sleep. Bij het intypen van code zet micropython automatisch de spaties ervoor. Na de laatste regels moet je een paar keer op enter drukken zodat python weet dat je uit de while lus wilt gaan.
+> Na bovenstaande moet je een paar keer op enter drukken om uit de while loop te gaan. De code begin dan de while loop te starten.
+
+> Je ziet hierboven dat weer eerst led1 aanzetten en led2 uit. Daarna wachten we een halve seconden, en daarna zetten wij led1 uit en vervolgens led2 aan en wachten we een aantal seconden. Omdat we dit willen herhalen in een eindeloze loop hebben wij dit in een while lus gezet (while True) betekend, wanneer waar, is altijd waar dus eindeloos. We kunnen de loop afbreken door ctrl+c breken we de while lus af
 
 # Workshop 3 knopje met ledje
+
+Benodigd:
+
+* Geel ledje
+* Zwart draadje
+* Bruin draadje
+* Groen draadje
+* Blauw draadje
+* Weerstandje met kleuren bruin zwart bruin goud (100Ohm)
+* Breadbordje met gaatjes
+* Wemos bordje
+
+1. zorg dat de kabeljes aangesloten is volgens het onderstaande voorbeeld
+![voorbeeld workshop1](images/workshop3.png)
+
+2. Type vervolgens na >>> de volgende regel in:
+```
+from machine import Pin
+```
+> We importeren eerst de Pin library.
+
 ```
 led = Pin(5, Pin.OUT)
 button = Pin(4, Pin.IN, Pin.PULL_UP)
+```
+> Vervolgens definieren wij dat de led aangesloten is op pin 5. Maar we definieren vervolgens ook dat de button aangesloten op pin 4. Omdat dit geen output maar een input device is geven wij Pin.IN i.p.v. Pin.OUT op. Daarnaast geven wij aan dat we een trigger willen hebben wanneer de knop los gelaten wordt (Pin.PULL_UP).
+
+```
 while True:
   if button.value():
     led.on()
   else:
     led.off()
 ```
+> Ook hier willen wij gebruik maken van een eindeloze loop. Echter zie je hier staan **if button.value()** Dit betekend wanneer de knop ingedrukt wordt dat button.value() een waarde 1 heeft hij een actie moet doen, namelijk het ledje aan zetten. Als **button.value()** geen waarde heeft, dan moet het ledje uitgezet worden.
+
 # Workshop 4 een stoplichtje maken
 ```
 from machine import Pin
