@@ -2,6 +2,10 @@
 
 Voordat we aan de slag kunnen gaan met MicroPython moeten we eerst zorgen dat we kunnen inloggen op het bordje. Dit kan op verschillende manieren.
 
+## Wemos D1 mini pin layout
+
+[wemospinlayout](images/wemospins.jpg)
+
 ## MAC OS gebruikers
 
 1. driver [downloaden](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip) voor MAC OS

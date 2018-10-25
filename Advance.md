@@ -2,6 +2,12 @@
 
 Voordat je aan de slag kan gaan, zorg er eerst voor dat je verbinding kan maken met je bordje (begin README).
 
+
+## Wemos D1 mini pin layout
+
+[wemospinlayout](images/wemospins.jpg)
+
+
 ## Handige links:
 
 [https://docs.micropython.org/en/latest/esp8266/quickref.html](https://docs.micropython.org/en/latest/esp8266/quickref.html)
