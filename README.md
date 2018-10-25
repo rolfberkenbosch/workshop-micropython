@@ -199,6 +199,7 @@ while True:
 
 Benodigd:
 
+* Knopje
 * Geel ledje
 * Zwart draadje
 * Bruin draadje
