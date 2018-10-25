@@ -78,7 +78,7 @@ Benodigd:
 1. zorg dat de kabeljes aangesloten is volgens het onderstaande voorbeeld
 ![voorbeeld workshop1](images/workshop1.png)
 
-2. Type vervolgens na ```>>>``` de volgende regel in:
+2. Type vervolgens na ``` >>> ``` de volgende regel in:
 
   ```
   from machine import Pin
