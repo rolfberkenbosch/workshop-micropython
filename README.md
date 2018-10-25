@@ -183,12 +183,34 @@ while True:
 > Ook hier willen wij gebruik maken van een eindeloze loop. Echter zie je hier staan **if button.value()** Dit betekend wanneer de knop ingedrukt wordt dat button.value() een waarde 1 heeft hij een actie moet doen, namelijk het ledje aan zetten. Als **button.value()** geen waarde heeft, dan moet het ledje uitgezet worden.
 
 # Workshop 4 een stoplichtje maken
+
+Benodigd:
+
+* 2x rood ledje
+* 2x oranje ledje
+* 2x groen ledje
+* Alle kleuren draadjes
+* 6x Weerstandje met kleuren bruin zwart bruin goud (100Ohm)
+* 1x Weerstandje met kleuren bruin zwart oranje goud (10KOhm)
+* Breadbordje met gaatjes
+* Wemos bordje
+
+1. zorg dat de kabeljes aangesloten is volgens het onderstaande voorbeeld
+![voorbeeld workshop1](images/workshop4.png)
+
 ```
 from machine import Pin
 from machine import ADC
 from time import sleep
+```
+> Hierboven laden wij 3 modules. Zoals je ziet is er een extra module bijgekopen, namelijk ADC. Met de module ADC kunnen we namelijk op de analoge poort meten hoeveel stroom er in gaat. Hiermee kunnen we bepalen wat de lichtsterkte is.
 
+```
 lichtsterkte = ADC(0)
+```
+> Hierboven geven we aan op welke poort hij de stroom moet gaan meten. Dit bordje heeft echter maar 1 analoge poort, namelijk 0. Dus geven we hier 0 op.
+
+```
 sensor1 = Pin(16, Pin.OUT)
 sensor2 = Pin(14, Pin.OUT)
 rood1 = Pin(15, Pin.OUT)
@@ -197,7 +219,10 @@ groen1 = Pin(12, Pin.OUT)
 rood2 = Pin(0, Pin.OUT)
 oranje2 = Pin(4, Pin.OUT)
 groen2 = Pin(5, Pin.OUT)
+```
+> Hierboven definieren wij de sensoren en ledjes op welke poort deze zitten.
 
+```
 while True:
   sensor1.off()
   sensor2.off()
@@ -231,3 +256,4 @@ while True:
     rood2.on()
   sensor2.off()
 ```
+> Eerst starten wij een eindeloze lus op, daarnaa zorgen we dat er door beide sensoren (LDR's) geen stroom loopt, en zorgen wij dat beide verkeerslichten op rood staan. Daarna zetten we de eerste sensor aan, hierdoor gaat er een stroom lopen door de sensor waardoor de lichtsterkte gemeten kan worden.  Hiermee simuleren wij of er een auto staat te wachten op de sensor. Want als er schaduw gesingaleerd wordt weten we dat er een auto staat te wachten. Hierdoor zetten we het verkeerlicht op groen. We wachten 5 seconden en zetten deze vervolgens op oranje en daarna op rood. Hierna kijken we bij sensor2 of er een auto staat te wachten en doen hier vervolgens de zelfde stappen.
