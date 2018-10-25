@@ -4,7 +4,7 @@ Voordat we aan de slag kunnen gaan met MicroPython moeten we eerst zorgen dat we
 
 ## Wemos D1 mini pin layout
 
-[wemospinlayout](images/wemospins.jpg)
+![wemospinlayout](images/wemospins.jpg)
 
 ## MAC OS gebruikers
 

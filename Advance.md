@@ -5,7 +5,7 @@ Voordat je aan de slag kan gaan, zorg er eerst voor dat je verbinding kan maken 
 
 ## Wemos D1 mini pin layout
 
-[wemospinlayout](images/wemospins.jpg)
+![wemospinlayout](images/wemospins.jpg)
 
 
 ## Handige links:
