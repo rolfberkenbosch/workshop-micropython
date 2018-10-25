@@ -160,6 +160,7 @@ Benodigd:
 * Wemos bordje
 
 1. zorg dat de kabeljes aangesloten is volgens het onderstaande voorbeeld
+```
 ![voorbeeld workshop1](images/workshop2.png)
 
 2. Type vervolgens na >>> de volgende regel in:
