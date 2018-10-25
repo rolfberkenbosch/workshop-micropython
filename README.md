@@ -95,6 +95,13 @@ We kunnen Python libraries importeren met het commando import.
   (nu importeren wij alleen de module/class Pin van de machine library)
 
 ## Commando print
+   ```print("Hallo wereld")```
+   (Hiermee schrijven wij Hallo wereld op het scherm)
+
+## Commando while
+   ```while True:
+        print("Hallo wereld")```
+   (Hiermee creeeren wij een eindeloze lus die hallo wereld schrijft op het scherm ctr+c breken we de eindeloze lus af. Je zien na de dubbele punt dat we twee spaties doen voor print hiermee zeggen we tegen Python dat alle code waar twee spaties voor staan uitgevoerd moet worden (indend))
 
 
 # Workshop 1 een ledje laten branden
