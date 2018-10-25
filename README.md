@@ -33,24 +33,30 @@ Voordat we aan de slag kunnen gaan met MicroPython moeten we eerst zorgen dat we
 2. driver installeren, open de zip file, je ziet dan onderstaande map:
 
 ![uitgepakte driver bestand screenshot](images/screen1.PNG)
+
 3. Kopieeer vervolgens de map ergens op je hardeschijf
 3. Start vervolgens de exe, zie onderstaande afbeelding voor het bestandsnaam:
 
 ![uitgepakte driver bestand screenshot](images/screen2.PNG)
+
 4. Klik vervolgens op **"Volgende"**
 
 ![uitgepakte driver bestand screenshot](images/screen3.PNG)
+
 5. Vervolgens verschijnt het onderstaande screenshot:
 
 ![uitgepakte driver bestand screenshot](images/screen4.PNG)
+
 6. Reboot het systeem, en sluit daarna het bordje aan met de usb kabel.
 7. Start vervolgens **Apparaatbeheer**. Klap vervolgens de com poorten uit om uit te zoeken op welke com poort het bordje is aangelosten. In dit geval com9.
 
 ![uitgepakte driver bestand screenshot](images/screen5.PNG)
+
 8. [Downloaden](https://the.earth.li/~sgtatham/putty/latest/w32/putty.exe) vervolgens putty, hiermee kunnen we een verbinding opzetten naar het bordje.
 9. Start vervolgens putty en stel de onderstaande waardes in, zet bij compoort het jusit poortnummer in.
 
 ![uitgepakte driver bestand screenshot](images/screen6.PNG)
+
 10. Klik vervolgens op openen, je ziet vervolgens een zwart scherm. Als je een paar keer op enter drukt zie je vervolgens ```>>>``` je hebt nu verbinding met het bordje.
 
 > **Note:** Het kan zijn dat er een beveiligingswaarschuwing komt, de driver installatie moet u toestaan.
