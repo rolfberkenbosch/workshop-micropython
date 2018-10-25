@@ -216,11 +216,11 @@ button = Pin(4, Pin.IN, Pin.PULL_UP)
 ```
 while True:
   if button.value():
-    led.on()
-  else:
     led.off()
+  else:
+    led.on()
 ```
-> Ook hier willen wij gebruik maken van een eindeloze loop. Echter zie je hier staan **if button.value()** Dit betekend wanneer de knop ingedrukt wordt dat button.value() een waarde 1 heeft hij een actie moet doen, namelijk het ledje aan zetten. Als **button.value()** geen waarde heeft, dan moet het ledje uitgezet worden.
+> Ook hier willen wij gebruik maken van een eindeloze loop. Echter zie je hier staan **if button.value()** Dit betekend wanneer de knop ingedrukt wordt dat button.value() een waarde 1 heeft hij een actie moet doen, namelijk het ledje uit zetten. Als **button.value()** geen waarde heeft, dan moet het ledje aangezet worden.
 
 # Workshop 4 een stoplichtje maken
 
