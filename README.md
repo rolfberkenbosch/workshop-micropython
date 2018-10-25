@@ -19,13 +19,13 @@ Voordat we aan de slag kunnen gaan met MicroPython moeten we eerst zorgen dat we
 
 9. Vervolgens kunt in de shell het volgende commando uitvoeren:
 
-   screen /dev/tty.wchusbserial [vervolgens tab om automatisch te laten aanvullen] 115200
+   ```screen /dev/tty.wchusbserial``` [vervolgens tab om automatisch te laten aanvullen] ```115200```
 
    Het commando ziet er ongeveer als volgt uit:
 
-   screen /dev/tty.wchusbserial14610 115200
+   ```screen /dev/tty.wchusbserial14610 115200```
 
- 10. Je ziet in het scherm **>>>** staan. Dit betekend dat je verbinding hebt met het bordje.
+ 10. Je ziet in het scherm ```>>>``` staan. Dit betekend dat je verbinding hebt met het bordje.
 
 ## Windows gebruikers
 
@@ -55,10 +55,10 @@ Python libraries zijn stukjes code/programma's die we kunnen aanroepen binnen on
 
 We kunnen Python libraries importeren met het commando import.
 
-  import machine
+  ```import machine```
   (nu importeren wij alle wat in de library machine staat, niet wenselijk)
 
-  from machine import Pin
+  ```from machine import Pin```
   (nu importeren wij alleen de module/class Pin van de machine library)
 
 ## Commando print
